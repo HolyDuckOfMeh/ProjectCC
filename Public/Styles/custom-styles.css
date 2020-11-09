@@ -1,0 +1,131 @@
+html,
+body{
+    height: auto;
+    background-color: #5050ac;
+    margin: 0;
+}
+
+.page-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.navbar-grid{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: #2a2a2e;
+    position: sticky;
+    top: 0px;
+}
+
+.btn-nav-system-builder{
+    grid-column: 1;
+    grid-row: 2;
+    float: right;
+    margin: auto;
+    margin-left: 20%;
+    padding: 7px 30px 7px 30px;
+    font-weight: lighter;
+    border: none;
+}
+
+.btn-nav-featured-builds{
+    grid-column: 2;
+    grid-row: 2;
+    float: right;
+    margin: auto;
+    margin-left: 20%;
+    padding: 7px 45px 7px 45px;
+    font-weight: lighter;
+    border: none;
+}
+
+.btn-nav-other{
+    grid-column: 3;
+    grid-row: 2;
+    float: right;
+    margin: auto;
+    margin-left: 20%;
+    padding: 7px 45px 7px 45px;
+    font-weight: lighter;
+    border: none;
+}
+
+.search-placeholder{
+    grid-column: 5;
+    grid-row: 2;
+    float: left;
+    margin: auto;
+    margin-left: 10%;
+    padding: 7px 45px 7px 45px;
+    font-weight: bold;
+    border: none;
+}
+
+
+.our-info-grid{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    grid-template-rows: 100px 250px;
+    font-weight: lighter;
+}
+
+.info-text-left{
+    grid-column: 1;
+    padding: 25px 5% 25px 5%;
+    background-image: url('../Images/PCBuild4.png');
+}
+
+
+.page-footer-grid{
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #2a2a2e;
+    height: auto;
+    padding-top: 15x;
+    padding-bottom: 15x;
+    border-top: 1px solid gray
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.footer-center{
+    grid-column: 2
+}
+
+.footer-right{
+    grid-column: 3;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 220px;
+}
+
+.btn-contact-us{
+    grid-column: 2;
+    background-color: #3B3A6D;
+    margin: auto;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    border: none;
+}
+
+.form-contact{
+    grid-column: 2;
+    width: 100%;
+}
+
+.form-contact > textarea,
+.form-row{
+    margin-bottom: 15px;
+}
