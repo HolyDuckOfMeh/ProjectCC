@@ -228,7 +228,7 @@ body{
     padding-top: 15x;
     padding-bottom: 15x;
     border-top: 1px solid gray;
-    position: sticky;
+    position: relative;
     bottom: 0px;
 }
 
