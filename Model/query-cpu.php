@@ -1,30 +1,22 @@
 <?php
+class Cpu{
 
-class Person{
     public function __construct($db){
         $this->conn = $db;
     }
 
-    public function addPerson($data){
-        // variables
-            $personName = $data['personName'];
-            $slicesEaten = $data['slicesEaten'];
-            $comments = $data['comments'];
-        // variables
+    function prodRead(){
+        // selects all products from db
+        $query = 'SELECT * FROM cpu ORDER BY Price DESC';
 
-        $query = "INSERT INTO pizzatable (name, slices_eaten, comments)
-                                VALUES ('$personName', '$slicesEaten', '$comments');";
+        // prepares query statement
+        $stmt = $this->conn->prepare($query);
 
-        //prepares query statement
-        $results = $this->conn->prepare($query);
+        // execute query
+        $stmt->execute();
 
-        //executes statement
-        $results->execute();
-
-        //grabs the last Id created (last row insert)
-        return $this->conn->lastInsertId();
+        // return values
+        return $stmt;
     }
-
 }
-
 ?>
