@@ -11,258 +11,352 @@ body{
     grid-template-rows: auto auto auto auto;
 }
 
-.navbar-grid{
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    background-color: #2a2a2e;
-    position: sticky;
-    top: 0px;
-    z-index: 9999;
-}
+/* navbar */
 
-.btn-nav-system-builder{
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    float: right;
-    margin: auto;
-    margin-left: 20%;
-    padding: 7px 30px 7px 30px;
-    font-weight: lighter;
-    border: none;
-}
+    .navbar-grid{
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        background-color: #2a2a2e;
+        position: sticky;
+        top: 0px;
+        z-index: 9999;
+    }
 
-.btn-nav-featured-builds{
-    grid-column: 3;
-    grid-row: 2;
-    display: grid;
-    float: right;
-    margin: auto;
-    margin-left: 20%;
-    padding: 7px 45px 7px 45px;
-    font-weight: lighter;
-    border: none;
-}
+    .btn-nav-system-builder{
+        grid-column: 2;
+        grid-row: 2;
+        display: grid;
+        float: right;
+        margin: auto;
+        margin-left: 20%;
+        padding: 7px 30px 7px 30px;
+        font-weight: lighter;
+        border: none;
+    }
 
-.btn-nav-home{
-    grid-column: 1;
-    grid-row: 2;
-    display: grid;
-    float: right;
-    margin: auto;
-    margin-left: 20%;
-    padding: 7px 45px 7px 45px;
-    font-weight: lighter;
-    border: none;
-}
+    .btn-nav-featured-builds{
+        grid-column: 3;
+        grid-row: 2;
+        display: grid;
+        float: right;
+        margin: auto;
+        margin-left: 20%;
+        padding: 7px 45px 7px 45px;
+        font-weight: lighter;
+        border: none;
+    }
 
-.search-container{
-    grid-column: 4;
-    grid-row: 2;
-    display: grid;
-    float: right;
-    float: left;
-    margin: auto;
-    margin-left: 20%;
-    padding: 7px 45px 7px 45px;
-    background: #2a2a2e;
-    font-size: 17px;
-    border: none;
-  }
+    .btn-nav-home{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        float: right;
+        margin: auto;
+        margin-left: 20%;
+        padding: 7px 45px 7px 45px;
+        font-weight: lighter;
+        border: none;
+    }
 
-
-.search-button{
-    grid-column: 5;
-    grid-row: 2;
-    display: grid;
-    float: left;
-    margin: auto;
-    margin-left: 10%;
-    padding: 7px 15px 7px 15px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.5s;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-/* //https://html-online.com/articles/gradient-background-buttons-css-html/  for later gradient transition bc currently iz broke*/
-
-.search-button-1{
-    background-image: linear-gradient(to right, #7b1bc9 0%, #dda989 51%, #2503be 100%);
-}
-
-.search-button-1:hover{
-    background-position: right center;
-}
+    .search-container{
+        grid-column: 4;
+        grid-row: 2;
+        display: grid;
+        float: right;
+        float: left;
+        margin: auto;
+        margin-left: 20%;
+        padding: 7px 45px 7px 45px;
+        background: #2a2a2e;
+        font-size: 17px;
+        border: none;
+    }
 
 
-.welcome-grid{
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 500px;
-    width: auto;
-    height: auto;
-    border: none;
-}
+    .search-button{
+        grid-column: 5;
+        grid-row: 2;
+        display: grid;
+        float: left;
+        margin: auto;
+        margin-left: 10%;
+        padding: 7px 15px 7px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
 
-.welcome-background{
-    display: grid;
-    grid-row: 1;
-    background-image: url('../Images/PCBuild5.jpg');
-    background-position: -350px -600px;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    /* //https://html-online.com/articles/gradient-background-buttons-css-html/  for later gradient transition bc currently iz broke*/
 
-}
+    .search-button-1{
+        background-image: linear-gradient(to right, #7b1bc9 0%, #dda989 51%, #2503be 100%);
+    }
 
-.welcome-message{
-    padding-left: 30px;
-    padding-top: 30px;
-    font-weight: lighter;
-    color: #ffffff;
-}
+    .search-button-1:hover{
+        background-position: right center;
+    }
 
-/* WORK IN PROGRESS */
-.box-background{
-    border:solid ;
-    border-color: #2a2a2e;
-    padding:1vw ;
-    position: absolute;
-    background-color: rgba(22, 16, 16, 0.5);
+/* navbar */
 
-}
+/* home */
 
+    .welcome-grid{
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px;
+        width: auto;
+        height: auto;
+        border: none;
+    }
 
-.home-featured-grid{
-    grid-row: 3;
-    display: grid;
-    grid-template-columns: 38% 1fr;
-    grid-template-rows: 500px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
+    .welcome-background{
+        display: grid;
+        grid-row: 1;
+        background-image: url('../Images/PCBuild5.jpg');
+        background-position: -350px -600px;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
 
-.home-featured-header{
-    grid-column: 1;
-    grid-row: 1;
-    display: grid;
-    font-weight: lighter;
-    color: #ffffff;
-    text-align: center;
-}  
+    }
 
-.home-featured-desc{
-    grid-column: 1;
-    grid-row: 2;
-    display: grid;
-    font-weight: lighter;
-    color: #ffffff;
-    text-align: center;
-    float: right;
-    margin: auto;
-    padding: 7px 45px 7px 45px;
-    font-weight: lighter;
-    border: none;
-}
+    .welcome-message{
+        padding-left: 30px;
+        padding-top: 30px;
+        font-weight: lighter;
+        color: #ffffff;
+    }
 
-.btn-home-featured{
-    grid-column: 1;
-    grid-row: 2;
-    display: grid;
-    font-weight: lighter;
-    color: #ffffff;
-    text-align: center;
-    float: right;
-    margin: auto;
-    padding: 7px 45px 7px 45px;
-    font-weight: lighter;
-    border: none;
-}
+    /* WORK IN PROGRESS */
+    .box-background{
+        border:solid ;
+        border-color: #2a2a2e;
+        padding:1vw ;
+        position: absolute;
+        background-color: rgba(22, 16, 16, 0.5);
+
+    }
 
 
-.home-featured-img{
-    grid-column: 2;
-    grid-row: 1, 2;
-    display: grid;
-    background-image: url('../Images/PCBuild.jpg');
-    background-size: 750px;
-    width: auto;
-    height: auto;
-    border: none;
-    margin-right: 50px;
-    margin-left: 50px;
-    background-repeat: no-repeat;
-}
+    .home-featured-grid{
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 38% 1fr;
+        grid-template-rows: 500px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
 
-.featured-builds-grid-one{
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 38% 1fr;
-    grid-template-rows: 500px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
+    .home-featured-header{
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        font-weight: lighter;
+        color: #ffffff;
+        text-align: center;
+    }  
 
-.featured-builds-grid-two{
-    grid-row: 3;
-    display: grid;
-    grid-template-columns: 1fr 38%;
-    grid-template-rows: 500px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
+    .home-featured-desc{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        font-weight: lighter;
+        color: #ffffff;
+        text-align: center;
+        float: right;
+        margin: auto;
+        padding: 7px 45px 7px 45px;
+        font-weight: lighter;
+        border: none;
+    }
+
+    .btn-home-featured{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        font-weight: lighter;
+        color: #ffffff;
+        text-align: center;
+        float: right;
+        margin: auto;
+        padding: 7px 45px 7px 45px;
+        font-weight: lighter;
+        border: none;
+    }
 
 
-.footer-grid{
-    grid-row: 4;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    background-color: #2a2a2e;
-    height: auto;
-    width: 100%;
-    padding-top: 15x;
-    padding-bottom: 15x;
-    border-top: 1px solid gray;
-    position: relative;
-    bottom: 0px;
-}
+    .home-featured-img{
+        grid-column: 2;
+        grid-row: 1, 2;
+        display: grid;
+        background-image: url('../Images/PCBuild.jpg');
+        background-size: 750px;
+        width: auto;
+        height: auto;
+        border: none;
+        margin-right: 50px;
+        margin-left: 50px;
+        background-repeat: no-repeat;
+    }
+/* home */
 
-.footer-top{
-    grid-row: 1;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    height: auto;
-}
+/* featured-builds */
 
-.footer-top-contact {
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    padding-top: 7px;
-    color: #ffffff;
-    text-align: center;
-}
+    .featured-welcome-grid{
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: auto;
+        height: auto;
+        border-bottom: 1px solid gray;
+    }
 
-.footer-top-other {
-    grid-column: 1;
-    grid-row: 1;
-    display: grid;
-    padding-top: 7px;
-    color: #ffffff;
-    text-align: center;
-}
+    .featured-welcome{
+        display: grid;
+        padding-top: 30px;
+        color: #ffffff;
+        font-weight: lighter;
+    }
 
-.footer-bottom{
-    grid-row: 2;
-    grid-column: 1;
-    display: grid;
-    padding-bottom: 10px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 15px;
-}
+    .featured-builds-grid{
+        grid-column: 1;
+        grid-row: 3;  
+        display: grid;
+        grid-template-columns: auto 15% 350px 15% auto;
+        grid-template-rows: repeat(auto-fill, minmax(0, auto));
+        margin-top: 50px;
+    }
+
+    .pizza-time-person{
+        display: grid;  
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        background-color: #e2e9f1;
+        padding: 6px 6px 6px 6px;
+        margin-bottom: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .pizza-time-person:nth-child(even){
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+        grid-column: 3 / 5;
+    }
+
+    .pizza-time-person:nth-child(odd){
+        animation: 2s ease-out 0s 1 slideInFromRight;
+        grid-column: 2 / 4;
+        background-color: #cfd7e0;
+    }
+
+    .pizza-time-person:nth-child(1){
+        background-color: #f9c465;
+    }
+
+    .pizza-time-person:hover{
+        transform: scale(1.15);
+    }
+
+    .pizza-time-name,
+    .pizza-time-slices-eaten{
+        grid-row: 2;
+    }
+
+    .pizza-time-name{
+        grid-column: 1;
+        padding: 25px 0 0 5px;
+        border-right: 1px solid rgb(105, 105, 105);
+    }
+
+    .pizza-time-name > h2{
+        font-size: 34px;
+    }
+
+    .pizza-time-slices-eaten{
+        grid-column: 2 / 5;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    .pizza-time-slices-eaten > h2{
+        font-size: 40px;
+    }
+
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+/* featured-builds */
+
+/* footer */
+
+    .footer-grid{
+        grid-row: 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        background-color: #2a2a2e;
+        height: auto;
+        width: 100%;
+        padding-top: 15x;
+        padding-bottom: 15x;
+        border-top: 1px solid gray;
+        position: relative;
+        bottom: 0px;
+    }
+
+    .footer-top{
+        grid-row: 1;
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        height: auto;
+    }
+
+    .footer-top-contact {
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        padding-top: 7px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .footer-top-other {
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        padding-top: 7px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .footer-bottom{
+        grid-row: 2;
+        grid-column: 1;
+        display: grid;
+        padding-bottom: 10px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+    }
+
+/* footer */
