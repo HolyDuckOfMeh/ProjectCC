@@ -4,12 +4,12 @@
     $colNum = 2;
 
     //loop to print each coupon in array
-        function makePizzaCard($pizName, $pizSlices, $pizComments, $colNum){
+        function makeBuildCard($pizName, $pizSlices, $pizComments, $colNum){
             if ($pizComments != ''){
                 $pizComments;
             };
             echo "
-                <div class='pizza-time-person border-shadow'>
+                <div class='featured-build-card border-shadow'>
                     <div class='pizza-time-name'>
                         <h2>{$pizName}</h2>
                         <p>{$pizComments}</p>
