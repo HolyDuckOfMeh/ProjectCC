@@ -56,32 +56,7 @@
     </div>
 
 
-<<<<<<< HEAD
     
-=======
-<!-- Displays the builds -->
-  <div class='featured-builds-grid' id="featured-grid">
-      <!-- Loops though db rows of featured builds -->
-        <?php
-                $colNum = 2;
-
-                while($row = $pizzaGet->fetch(PDO::FETCH_ASSOC)){
-                    // Variables
-                        $pizName = $row['name'];
-                        $pizSlices = $row['slices_eaten'];
-                        $pizComments = $row['comments'];
-
-                    // Variables
-
-                    makePizzaCard($pizName, $pizSlices, $pizComments, $colNum);
-                    $colNum++;
-                }
-
-            ?>
-  </div>
-
-
->>>>>>> 3d95f366d8cb4a8e0c6e50585df711bc0a11a076
 <?php
 
   include "./View/footer.php"
