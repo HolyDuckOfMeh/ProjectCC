@@ -188,7 +188,6 @@ body{
         border: none;
     }
 
-
     .home-featured-img{
         grid-column: 2;
         grid-row: 1, 2;
@@ -228,84 +227,107 @@ body{
         grid-column: 1;
         grid-row: 3;  
         display: grid;
-        grid-template-columns: auto 15% 350px 15% auto;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(auto-fill, minmax(0, auto));
         margin-top: 50px;
     }
 
     .featured-builds-card{
         display: grid;  
-        grid-template-columns: auto auto;
+        grid-template-columns: 200px 200px;
         grid-template-rows: auto;
-        background-color: #e2e9f1;
         padding: 6px 6px 6px 6px;
-        margin-bottom: 20px;
-        transition: all 0.5s ease-in-out;
     }
 
-    .pizza-time-person:nth-child(even){
-        animation: 2s ease-out 0s 1 slideInFromLeft;
-        grid-column: 3 / 5;
-    }
 
-    .pizza-time-person:nth-child(odd){
-        animation: 2s ease-out 0s 1 slideInFromRight;
-        grid-column: 2 / 4;
-        background-color: #cfd7e0;
-    }
-
-    .pizza-time-person:nth-child(1){
-        background-color: #f9c465;
-    }
-
-    .pizza-time-person:hover{
-        transform: scale(1.15);
-    }
-
-    .pizza-time-name,
-    .pizza-time-slices-eaten{
-        grid-row: 2;
-    }
-
-    .pizza-time-name{
+    .featured-builds-info{
         grid-column: 1;
         padding: 25px 0 0 5px;
-        border-right: 1px solid rgb(105, 105, 105);
     }
 
-    .pizza-time-name > h2{
-        font-size: 34px;
-    }
-
-    .pizza-time-slices-eaten{
-        grid-column: 2 / 5;
+    .featured-builds-image{
+        grid-column: 2;
         margin-left: 5px;
         margin-top: 20px;
+        width: auto;
+        height: auto;
+        border: none;
+        margin-right: 50px;
+        margin-left: 50px;
+        background-repeat: no-repeat;
     }
-
-    .pizza-time-slices-eaten > h2{
-        font-size: 40px;
-    }
-
-    @keyframes slideInFromLeft {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes slideInFromRight {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(0);
-        }
+    
+    .featured-builds-btn{
+        font-weight: lighter;
+        color: #ffffff;
+        text-align: center;
+        margin: auto;
+        padding: 7px 45px 7px 45px;
+        font-weight: lighter;
+        border: none;
     }
 
 /* featured-builds */
+
+/* newsletter */
+
+    .newsletter-open-button{
+        background-color: #555;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+    }
+
+    .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+      }
+      
+      /* Full-width input fields */
+      .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      /* Set a style for the submit/login button */
+      .form-container .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+      }
+      
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+        background-color: red;
+      }
+      
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+
+/* newsletter */
 
 /* footer */
 

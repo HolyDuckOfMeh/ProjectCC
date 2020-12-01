@@ -1,7 +1,17 @@
 <?php
 
   include "./View/header.php";
+  include "./Controller/db_conn.php";
+  include "./Controller/build-cards.php";
+  include "./Model/query-build.php";
   include "./View/navbar.php";
+
+  $database = new Database();
+  $db = $database->connect();
+
+  $builds = new FeaturedBuilds($db);
+
+  $buildsGet = $builds->prodRead();
 
 ?>
 
@@ -14,7 +24,39 @@
       </div>
     <!-- Featured Builds Welcome -->
 
+<!-- Displays person and pizza slices eaten -->
+<div class='featured-builds-grid' id="featured-builds">
+        <!-- Loops though people (db rows) -->
 
+
+            <!-- Put your people cards here, they can be listed vertically -->
+
+
+                <?php
+                        $colNum = 2;
+
+                        while($row = $buildsGet->fetch(PDO::FETCH_ASSOC)){
+                            // Variables
+                                $buildType = $row['Type'];
+                                $buildDesc = $row['Description'];
+                                $buildPrice = $row['Price'];
+                                $buildImg = $row['Image'];
+
+
+                            // Variables
+
+                            makeBuildCard($buildType, $buildDesc, $buildPrice, $buildImg, $colNum);
+                            $colNum++;
+                        }
+
+                    ?>
+                </div>
+                
+        <!-- Loops though people (db rows) -->
+    </div>
+
+
+    
 <?php
 
   include "./View/footer.php"

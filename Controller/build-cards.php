@@ -4,18 +4,19 @@
     $colNum = 2;
 
     //loop to print each coupon in array
-        function makeBuildCard($pizName, $pizSlices, $pizComments, $colNum){
-            if ($pizComments != ''){
-                $pizComments;
+        function makeBuildCard($buildType, $buildDesc, $buildPrice, $buildImg, $colNum){
+            if ($buildDesc != ''){
+                $buildDesc;
             };
             echo "
-                <div class='featured-build-card border-shadow'>
-                    <div class='pizza-time-name'>
-                        <h2>{$pizName}</h2>
-                        <p>{$pizComments}</p>
+                <div class='featured-build-card'>
+                    <div class='featured-builds-info'>
+                        <h2 style='color: #ffffff'>{$buildType}</h2>
+                        <p style='color: #ffffff'>{$buildDesc}</p>
+                        <button class='featured-builds-btn btn btn-success'>\${$buildPrice}</button>
                     </div>
-                    <div class='pizza-time-slices-eaten'>
-                        <h2>Slices Eaten: {$pizSlices}</h2>
+                    <div class='featured-builds-image'>
+                        <img style='width: 500px; height: 500px;' src='./View/Public/Images/Featured-Builds/{$buildImg}'>
                     </div>
                 </div>
 
