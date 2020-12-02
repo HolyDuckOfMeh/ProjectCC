@@ -5,7 +5,7 @@
 
 ?>
 
- <h1 style='text-align: center; color: #ffffff;'>Currently under construction! Please come back later. Waiting on database fix before I make it so I don't have to make it twice.</h1>
+ <h1 style='text-align: center; color: #ffffff;'>Currently under construction! Please come back later. It's just going to be css and buttons so I'll knock it out at home. Shouldn't take long either</h1>
  <p style='text-align: center; color: #ffffff;'>will fix footer to bottom soon :))))))))))))))))))))))))</p>
 
  <!-- 
