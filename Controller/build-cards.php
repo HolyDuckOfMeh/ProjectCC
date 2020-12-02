@@ -9,7 +9,7 @@
                 $buildDesc;
             };
             echo "
-                <div class='featured-build-card'>
+                <div class='featured-builds-card'>
                     <div class='featured-builds-info'>
                         <h2 style='color: #ffffff'>{$buildType}</h2>
                         <p style='color: #ffffff'>{$buildDesc}</p>
