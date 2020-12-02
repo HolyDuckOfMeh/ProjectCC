@@ -5,6 +5,7 @@
   include "./Controller/build-cards.php";
   include "./Model/query-build.php";
   include "./View/navbar.php";
+  include "./View/newsletter.php";
 
   $database = new Database();
   $db = $database->connect();
