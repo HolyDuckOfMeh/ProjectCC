@@ -281,7 +281,8 @@ body{
         position: fixed;
         bottom: 15px;
         right: 15px;
-        width: 280px;
+        width: 130px;
+        z-index: 8;
     }
 
     /* The popup newsletter - hidden by default */
@@ -295,7 +296,7 @@ body{
     }
 
     .newsletter-container {
-        max-width: 300px;
+        max-width: 250px;
         padding: 10px;
         background-color: white;
       }
