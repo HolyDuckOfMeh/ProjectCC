@@ -15,7 +15,7 @@
     <input type="text" placeholder="Enter Name" id='newsName'>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" id='newsEmail'>
+    <input type="email" placeholder="Enter Email" id='newsEmail'>
 
     <p id='ajax-msg'></p>
 

@@ -302,7 +302,7 @@ body{
       }
       
       /* Full-width input fields */
-      .newsletter-container input[type=text] {
+      .newsletter-container input[type=text], .newsletter-container input[type=email] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 22px 0;
@@ -311,7 +311,7 @@ body{
       }
       
       /* When the inputs get focus, do something */
-      .newsletter-container input[type=text]:focus {
+      .newsletter-container input[type=text]:focus, .newsletter-container input[type=email]:focus {
         background-color: #ddd;
         outline: none;
       }
@@ -337,6 +337,13 @@ body{
       .newsletter-container .btn:hover, .open-button:hover {
         opacity: 1;
       }
+
+      @media only screen and (max-width: 1530px){
+        .img-lul{
+          display: none;
+        }
+      }
+      
 
 /* newsletter */
 
