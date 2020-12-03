@@ -14,8 +14,6 @@
 
   $buildsGet = $builds->prodRead();
 
-  include "./Controller/ajax-newsletter.php"
-
 ?>
 
     <!-- Featured Builds Welcome -->

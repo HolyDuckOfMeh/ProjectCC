@@ -19,7 +19,7 @@ $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
 
 if($newsName == "" || $newsEmail == "")
 {
-  echo "Please fill out name and email";
+  echo "Please fill out name and email.";
 }
 else{
   // array & db insert
@@ -31,6 +31,6 @@ else{
   $newsletter = new Newsletter($db);
   $newsletter->addNewsletter($newsData);
 
-  echo "Successfully added to list";
+  echo "Thank you for signing up!";
 }
 ?>
