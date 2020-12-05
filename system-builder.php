@@ -6,8 +6,8 @@
 
 ?>
 
- <h1 style='text-align: center; color: #ffffff;'>Currently under construction! Please come back later. It's just going to be css and buttons so I'll knock it out at home. Shouldn't take long either</h1>
- <p style='text-align: center; color: #ffffff;'>will fix footer to bottom soon :))))))))))))))))))))))))</p>
+  <h1 class='system-header'>This is a scrapped portion due to time constraints. Please go to Featured builds to grade.</h1>
+  <h2 style='color: #ffffff; text-align: center;'>Nerd.</h2>
 
  <!-- 
   a guide to fixing footer 
@@ -15,8 +15,3 @@
   https://wordpress.org/support/topic/make-footer-fixed-to-the-bottom-of-the-page/
  -->
 
-<?php
-
-  include "./View/footer.php"
-
-?>

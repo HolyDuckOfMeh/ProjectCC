@@ -351,6 +351,22 @@ body{
 
 /* home */
 
+/* system builder */
+
+.system-grid{
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: 1fr;
+    grid-template-columns: 100vh;
+}
+
+.system-header{
+    text-align: center;
+    color: #ffffff;
+}
+
+/* system builder */
+
 /* featured-builds */
 
     .featured-welcome-grid{
