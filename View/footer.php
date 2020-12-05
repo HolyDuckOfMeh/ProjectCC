@@ -13,7 +13,7 @@
 
         <!-- Footer Bottom -->
           <div class='footer-bottom'>
-            <p style='font-size: 15px'>© 2020 CORNPUTER CORPORATION OF AMERICA - Terms and Conditions - PRIVACY POLICY</p>
+            <p>© 2020 CORNPUTER CORPORATION OF AMERICA - Terms and Conditions - PRIVACY POLICY</p>
           </div>
         <!-- Footer Bottom -->
       </div>
