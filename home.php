@@ -24,11 +24,14 @@
     <!-- Home Featured Builds -->
       <div class='home-featured-grid'>
         <div class='home-featured-header'>
-          <h2 style='position: relative; top: 130px;'>Featured Builds</h2>
-          <p style='position: relative; bottom: 80px;'>Check out our latest builds with sleek designs.</p>
+          <h2>Featured Builds</h2>
         </div>
-        <a href="http://localhost/FIT-Web-Course/ProjectCC/featured-builds.php" class='btn-home-featured btn btn-success' style ='background: #2b86de; position: relative; bottom: 250px;'>Featured Builds</a> 
+        <div class='home-featured-desc'>
+          <p>Check out our latest builds with sleek designs.</p>
+        </div>
+        <a href="http://localhost/FIT-Web-Course/ProjectCC/featured-builds.php" class='btn-home-featured btn btn-success'>Featured Builds</a> 
         <div class='home-featured-img'>
+        <img class='home-featured-img' src='./View/Public/Images/PCBuild.jpg'>
         </div>
       </div>
     <!-- Home Featured Builds -->
